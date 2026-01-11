@@ -1,6 +1,6 @@
 [user]
 	email = husshegazydev@gmail.com
-	name = Huss Hegazy
+	name = Hussein Hegazy
 [pull]
 	ff = only
 [rerere]
@@ -13,3 +13,8 @@
 	diff = false
 [diff]
   external = difft
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
